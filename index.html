@@ -2,12 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>threejs-oyun</title>
+    <title>Three.js Oyun</title>
   </head>
   <body>
-    <div id="app"></div>
+    
+    <div id="uiLayer">
+        <div id="scoreText">Skor: <span id="scoreValue">0</span></div>
+        <div id="gameOverScreen" style="display: none;">
+            <h1>Oyun Bitti!</h1>
+            <p>Tekrar oynamak için BOŞLUK (Space) tuşuna bas.</p>
+        </div>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
